@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hook/Routes/routes.dart';
 
+// ignore: must_be_immutable
 class PageContent extends StatelessWidget {
   String name = '';
   PageContent({Key? key, required this.name}) : super(key: key);

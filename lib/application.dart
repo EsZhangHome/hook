@@ -2,7 +2,6 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:hook/Routes/routes.dart';
 import 'package:hook/pages/home/home.dart';
-import 'package:hook/pages/home/login.dart';
 
 class Applicatiopn extends StatelessWidget {
   @override
@@ -10,11 +9,11 @@ class Applicatiopn extends StatelessWidget {
     FluroRouter router = FluroRouter();
     Routes.configureRoutes(router);
     return MaterialApp(
-      home: HomePage(),
       theme: ThemeData(
         primaryColor: Colors.green,
       ),
       onGenerateRoute: router.generator,
+      home: HomePage(),
     );
   }
 }
